@@ -21,30 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const winner1 = winners[0];
     const winner2 = winners[1];
 
-    // Mostrar confeti
-    const duration = 15 * 1000; // Duración del efecto de confeti (en milisegundos)
-    const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-    function randomInRange(min, max) {
-      return Math.random() * (max - min) + min;
-    }
-
-    function runAnimation() {
-      const timeLeft = animationEnd - Date.now();
-
-      if (timeLeft <= 0) {
-        return;
-      }
-
-      const particleCount = 50 * (timeLeft / duration);
-      confetti(Object.assign({}, defaults, { particleCount, origin: { x: 0.5, y: 0.5 } }));
-
-      requestAnimationFrame(runAnimation);
-    }
-
-    runAnimation();
-
     // Mostrar a los ganadores en el centro de la pantalla
     const winnersDiv = document.createElement("div");
     winnersDiv.classList.add("centered-winners");
