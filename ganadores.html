@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorteo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/canvas-confetti.min.js"></script>
+</head>
+<body>
+  <div class="countdown">
+    <h1>Cuenta Regresiva</h1>
+    <div class="circle">
+      <svg class="progress-ring" width="200" height="200">
+        <circle class="progress-ring__circle" stroke="#ffffff" stroke-width="10" fill="transparent" r="90" cx="100" cy="100"></circle>
+      </svg>
+      <div class="countdown-timer">
+        <p id="countdown">9</p>
+      </div>
+    </div>
+  </div>
+  <div class="winners" style="display: none;">
+    <h2>Ganadores:</h2>
+    <p id="winner1"></p>
+    <p id="winner2"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
