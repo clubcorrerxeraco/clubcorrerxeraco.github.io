@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorteo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .header {
+      text-align: center;
+      font-size: 9vw; /* Esto establece el tamaño de letra como el 10% del ancho de la ventana */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .box {
+      border: 2px solid #000;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+   <div class="header">
+    Club de Correr Xeraco
+  </div>
+  <br>
+  Sorteo de dos dorsales para el XXIII Gran Fons Manolo Pardo
+  <div class="container">
+    <div class="box">
+      <p>adoradam_1998</p>
+      <p>angel12_piles</p>
+      <p>graciela_vila_centro_estetica</p>
+      <p>higinij</p>
+      <p>Joanvidalet</p>
+      <p>aitorito_76</p>
+      <p>encaro76</p>
+      <p>cris.gs20</p>
+      <p>linamarsa72</p>
+      <p>sanlu__</p>
+      <p>jules82mc</p>
+      <p>alejolaxara</p>
+      <p>anxelloti</p>
+      <p>albasf_</p>
+      <p>Xerakko</p>
+      <p>sanchismolina</p>
+      <p>ximena.velez89</p>
+      <p>saray_fajardo</p>
+      <p>almusimat</p>
+      <p>guillem11_02</p>
+      <p>baratobarber</p>
+      <p>susanamurillocimente</p>
+      <p>jesus810castro</p>
+      <p>quiquera</p>
+      <p>alexlooopeez</p>
+      <p>ericborntorun</p>
+      <p>dr_velicio</p>
+      <p>marietag22</p>
+    </div>
+    <button onclick="mostrarGanadores()">Realizar sorteo</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    function mostrarGanadores() {
+      const ganador1 = "Xerakko";
+      const ganador2 = "Joanvidalet";
+     
+      const resultado = document.getElementById("resultado");
+      resultado.innerHTML = `<p>Los dos ganadores son: ${ganador1} y ${ganador2}, enhorabuena</p>`;
+    }
+  </script>
+</body>
+</html>
