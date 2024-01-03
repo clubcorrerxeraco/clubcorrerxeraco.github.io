@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function getWinners() {
     // Aquí obtendrías los nombres de los ganadores, coloca la lógica adecuada
-    const winnersArray = ["Ganador1", "Ganador2"]; // Reemplaza con los nombres reales
+    const winnersArray = ["Xerakko", "Joanvidalet_"]; // Reemplaza con los nombres reales
     return winnersArray;
   }
 });
